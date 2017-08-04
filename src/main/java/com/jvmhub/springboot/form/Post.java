@@ -4,13 +4,12 @@ import javax.validation.constraints.Size;
 
 public class Post {
 	
-	@Size(min=4, max=35)
-	private String title;
-	
-	@Size(min=30, max= 1000)
+
 	private String content;
+    private String title;
 
 	public String getTitle() {
+
 		return title;
 	}
 
@@ -19,10 +18,12 @@ public class Post {
 	}
 
 	public String getContent() {
+
 		return content;
 	}
 
 	public void setContent(String content) {
+
 		this.content = content;
 	}
 }
